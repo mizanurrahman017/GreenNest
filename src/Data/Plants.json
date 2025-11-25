@@ -1,0 +1,74 @@
+[
+  {
+    "plantId": 1,
+    "plantName": "Snake Plant",
+    "category": "Air Purifier",
+    "price": 18,
+    "rating": 4.8,
+    "availableStock": 10,
+    "careLevel": "Easy",
+    "description": "A hardy plant that purifies indoor air and thrives in low light.",
+    "image": "/public/potted-snake-plants-inside-a-beautiful-new-flat-or-royalty-free-image-1727481322.avif",
+    "providerName": "UrbanGreen Studio"
+  },
+  {
+    "plantId": 2,
+    "plantName": "Monstera Deliciosa",
+    "category": "Decorative",
+    "price": 32,
+    "rating": 4.9,
+    "availableStock": 7,
+    "careLevel": "Medium",
+    "description": "A stylish indoor plant known for its iconic split leaves.",
+    "image": "/public/images.jpg",
+    "providerName": "Leafy Paradise"
+  },
+  {
+    "plantId": 3,
+    "plantName": "Peace Lily",
+    "category": "Flowering",
+    "price": 24,
+    "rating": 4.7,
+    "availableStock": 12,
+    "careLevel": "Easy",
+    "description": "Elegant white flowers that bloom indoors and clean the air.",
+    "image": "/public/Peace.png",
+    "providerName": "GreenHome Nursery"
+  },
+  {
+    "plantId": 4,
+    "plantName": "Aloe Vera",
+    "category": "Medicinal",
+    "price": 15,
+    "rating": 4.6,
+    "availableStock": 20,
+    "careLevel": "Easy",
+    "description": "A multifunctional succulent widely known for its healing gel.",
+    "image": "/public/Aloe.png",
+    "providerName": "EcoPlant Hub"
+  },
+  {
+    "plantId": 5,
+    "plantName": "ZZ Plant",
+    "category": "Low Maintenance",
+    "price": 28,
+    "rating": 4.8,
+    "availableStock": 8,
+    "careLevel": "Very Easy",
+    "description": "A glossy-leaf plant that survives even in the darkest corners.",
+    "image": "/public/plants.png",
+    "providerName": "UrbanGreen Studio"
+  },
+  {
+    "plantId": 6,
+    "plantName": "Areca Palm",
+    "category": "Air Purifier",
+    "price": 45,
+    "rating": 4.9,
+    "availableStock": 6,
+    "careLevel": "Medium",
+    "description": "A tropical indoor palm that adds a fresh natural vibe.",
+    "image": "/public/Areca.png",
+    "providerName": "Leafy Paradise"
+  }
+]

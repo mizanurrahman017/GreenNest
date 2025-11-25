@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Arif Hossain",
+    "specialization": "Indoor Plant Specialist",
+    "image": "/expert/expert1.png"
+  },
+  {
+    "id": 2,
+    "name": "Nadia Akter",
+    "specialization": "Disease Expert",
+    "image": "/expert/expert2.png"
+  },
+  {
+    "id": 3,
+    "name": "Rafsan Mahmud",
+    "specialization": "Garden Designer",
+    "image": "/expert/expert3.png"
+  }
+]
