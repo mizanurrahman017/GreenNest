@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router";
-import { User, Menu, X, LogOut } from "lucide-react";
+import { Menu, X, LogOut } from "lucide-react";
 import { GoogleAuthProvider, onAuthStateChanged, signInWithPopup, signOut } from "firebase/auth";
 import { auth } from "../../firebase/Firebase.init";
 
@@ -23,12 +23,6 @@ const Navbar = () => {
     setDropdown(false);
   };
 
-  // 🔥 Google Provider setup
-  // const googleProvider = new GoogleAuthProvider();
-
-  // 🔥 Actual Google Sign-in function
-
-
   return (
     <nav className="w-full bg-white shadow px-6 py-4 flex items-center justify-between relative">
       
@@ -42,24 +36,28 @@ const Navbar = () => {
         <li><Link to="/profile">My Profile</Link></li>
       </ul>
 
+      {/* RIGHT SIDE */}
       <div className="hidden md:flex items-center gap-4">
         {user ? (
           <div className="relative">
-            <button
+            {/* 🔥 Rounded Profile Picture */}
+            <img
+              src={user.photoURL || "https://i.ibb.co/MBtjqXQ/no-user.png"}
+              alt="profile"
               onClick={() => setDropdown(!dropdown)}
-              className="flex items-center gap-2 text-green-700 font-medium"
-            >
-              <User size={20} /> {user.displayName || "User"}
-            </button>
+              className="w-10 h-10 rounded-full cursor-pointer border-2 border-green-600"
+            />
 
+            {/* 🔽 Dropdown */}
             {dropdown && (
-              <div className="absolute right-0 mt-2 bg-white shadow-md rounded w-40 p-3">
-                <p className="text-gray-700 text-sm mb-2">
+              <div className="absolute right-0 mt-3 bg-white shadow-md rounded-xl w-44 p-3 z-50">
+                <p className="text-gray-700 text-sm font-medium mb-2">
                   {user.displayName || user.email}
                 </p>
+
                 <button
                   onClick={handleLogout}
-                  className="flex items-center gap-2 text-red-600 font-medium"
+                  className="flex items-center gap-2 text-red-600 font-semibold hover:text-red-800"
                 >
                   <LogOut size={18} /> Logout
                 </button>
@@ -72,14 +70,6 @@ const Navbar = () => {
               Login
             </Link>
 
-            {/* 🔥 FIXED Google button */}
-            {/* <button
-              onClick={handleGoogleSignIn}
-              className="px-4 py-1 bg-red-500 text-white rounded"
-            >
-              Sign In With Google
-            </button> */}
-
             <Link to="/register" className="px-4 py-1 bg-green-500 text-white rounded">
               Register
             </Link>
@@ -87,6 +77,7 @@ const Navbar = () => {
         )}
       </div>
 
+      {/* Mobile Menu Button */}
       <button className="md:hidden" onClick={toggleMenu}>
         {isOpen ? <X size={28} /> : <Menu size={28} />}
       </button>

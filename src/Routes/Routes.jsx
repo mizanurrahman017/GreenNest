@@ -4,6 +4,9 @@ import Root from "../pages/Root/Root";
 import HomePage from "../pages/Home/Home";
 import Details from "../component/Details/details";
 import Login from "../component/login/login";
+import register from "../component/Register/register";
+import myprofile from "../component/Myprofile/myprofile";
+
 
 
 export const router = createBrowserRouter([
@@ -22,6 +25,14 @@ export const router = createBrowserRouter([
       {
         path: "/login",
         Component: Login,
+      },
+      {
+        path: "/register",
+        Component: register,
+      },
+      {
+        path: "/profile",
+        Component: myprofile,
       }
     ]
   },

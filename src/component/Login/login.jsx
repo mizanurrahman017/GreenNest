@@ -19,10 +19,10 @@ export default function Login() {
 
     signInWithEmailAndPassword(auth, email, password)
       .then(() => {
-        navigate("/"); // Login success → Home page
+        navigate("/");
       })
       .catch((error) => {
-        alert(error.message); // ERROR show
+        alert(error.message);
       });
   };
 
@@ -30,7 +30,7 @@ export default function Login() {
   const handleGoogleLogin = () => {
     signInWithPopup(auth, googleProvider)
       .then(() => {
-        navigate("/"); // Success → Home page
+        navigate("/");
       })
       .catch((error) => {
         alert(error.message);
