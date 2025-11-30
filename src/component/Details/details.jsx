@@ -6,7 +6,7 @@ const Details = () => {
     const { id } = useParams();
     const [plant, setPlant] = useState(null);
 
-    // Consultation form state
+    
     const [form, setForm] = useState({ name: "", email: "" });
     const [success, setSuccess] = useState("");
 
@@ -32,23 +32,23 @@ const Details = () => {
             <h1 className="text-3xl font-bold mb-4">{plant.plantName}</h1>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {/* Plant Image */}
+                
                 <div>
                     <img
                         src={plant.image}
                         alt={plant.plantName}
-                        className="w-full rounded-lg shadow-md"
+                        className="w-700 h-150 object-cover rounded-lg shadow-md mx-auto"
                     />
                 </div>
 
-                {/* Plant Info */}
+                
                 <div>
                     <p className="text-gray-700 mb-3">{plant.description}</p>
                     <p className="font-semibold">Price: ${plant.price}</p>
                     <p className="font-semibold">Rating: {plant.rating} ⭐</p>
                     <p className="font-semibold mb-4">Stock: {plant.availableStock}</p>
 
-                    {/* Consultation Form */}
+                    
                     <div className="border p-4 rounded-lg bg-gray-50">
                         <h2 className="font-bold text-lg mb-2">Book Consultation</h2>
 

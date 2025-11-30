@@ -13,7 +13,7 @@ export default function Login() {
   const navigate = useNavigate();
   const googleProvider = new GoogleAuthProvider();
 
-  // Email Login
+  
   const handleLogin = (e) => {
     e.preventDefault();
 
@@ -26,7 +26,7 @@ export default function Login() {
       });
   };
 
-  // Google Login
+  
   const handleGoogleLogin = () => {
     signInWithPopup(auth, googleProvider)
       .then(() => {

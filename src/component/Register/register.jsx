@@ -15,7 +15,7 @@ export default function Register() {
   const navigate = useNavigate();
   const googleProvider = new GoogleAuthProvider();
 
-  // Password Validation Function
+  
   const validatePassword = (password) => {
     if (password.length < 6) return "Password must be at least 6 characters";
     if (!/[A-Z]/.test(password)) return "Password must contain an uppercase letter";
@@ -23,7 +23,7 @@ export default function Register() {
     return "";
   };
 
-  // Handle Register
+  
   const handleRegister = (e) => {
     e.preventDefault();
 
@@ -34,7 +34,7 @@ export default function Register() {
       return setError("Password & Confirm Password do not match!");
     }
 
-    // Firebase Signup
+    
     createUserWithEmailAndPassword(auth, email, password)
       .then((result) => {
         updateProfile(result.user, {
@@ -42,14 +42,14 @@ export default function Register() {
           photoURL: photo
         });
 
-        navigate("/"); // Success হলে Home এ redirect
+        navigate("/"); 
       })
       .catch((error) => {
         setError(error.message);
       });
   };
 
-  // Google Signup
+  
   const handleGoogleSignup = () => {
     signInWithPopup(auth, googleProvider)
       .then(() => navigate("/"))
@@ -134,7 +134,7 @@ export default function Register() {
   );
 }
 
-// Inline CSS Styles
+
 const styles = {
   container: {
     width: "100%",

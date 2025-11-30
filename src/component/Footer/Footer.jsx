@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
     return (
         <footer className="bg-black text-gray-300 py-14 px-6 md:px-20">
-            {/* Top Menu */}
+            
             <div className="grid grid-cols-2 md:grid-cols-4 gap-10 mb-12">
                 <div>
                     <h3 className="text-white font-semibold mb-4">Clients</h3>
@@ -50,10 +50,10 @@ const Footer = () => {
                 </div>
             </div>
 
-            {/* Bottom Line */}
+            
             <hr className="border-gray-700 mb-6" />
 
-            {/* Bottom Menu */}
+            
             <div className="flex flex-col md:flex-row md:items-center md:justify-between text-sm mb-4">
                 <div className="flex space-x-4 mb-4 md:mb-0">
                     <a href="#">Terms</a>
@@ -62,11 +62,11 @@ const Footer = () => {
                     <a href="#">Media</a>
                 </div>
 
-                {/* Empty placeholder (icons removed) */}
+                
                 <div></div>
             </div>
 
-            {/* Copyright */}
+            
             <div className="text-sm text-gray-400">
                 © 2024. All Rights Reserved. <br />
                 Built by BootstrapBrain with 💙

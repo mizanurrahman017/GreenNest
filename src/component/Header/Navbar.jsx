@@ -36,11 +36,11 @@ const Navbar = () => {
         <li><Link to="/profile">My Profile</Link></li>
       </ul>
 
-      {/* RIGHT SIDE */}
+      
       <div className="hidden md:flex items-center gap-4">
         {user ? (
           <div className="relative">
-            {/* 🔥 Rounded Profile Picture */}
+            
             <img
               src={user.photoURL || "https://i.ibb.co/MBtjqXQ/no-user.png"}
               alt="profile"
@@ -48,7 +48,7 @@ const Navbar = () => {
               className="w-10 h-10 rounded-full cursor-pointer border-2 border-green-600"
             />
 
-            {/* 🔽 Dropdown */}
+           
             {dropdown && (
               <div className="absolute right-0 mt-3 bg-white shadow-md rounded-xl w-44 p-3 z-50">
                 <p className="text-gray-700 text-sm font-medium mb-2">
@@ -70,14 +70,14 @@ const Navbar = () => {
               Login
             </Link>
 
-            <Link to="/register" className="px-4 py-1 bg-green-500 text-white rounded">
+            <Link to="/signup" className="px-4 py-1 bg-green-500 text-white rounded">
               Register
             </Link>
           </div>
         )}
       </div>
 
-      {/* Mobile Menu Button */}
+     
       <button className="md:hidden" onClick={toggleMenu}>
         {isOpen ? <X size={28} /> : <Menu size={28} />}
       </button>

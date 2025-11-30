@@ -32,12 +32,12 @@ const MyProfile = () => {
     <div className="flex justify-center items-center min-h-screen bg-gray-100 p-4">
       <div className="bg-white shadow-xl rounded-xl p-6 w-full max-w-lg">
         
-        {/* Title */}
+        
         <h2 className="text-2xl font-semibold text-center mb-4">
           My Profile
         </h2>
 
-        {/* User Photo */}
+        
         <div className="flex justify-center mb-4">
           <img
             src={user?.photoURL || "/public/Aloe.png"}
@@ -46,12 +46,12 @@ const MyProfile = () => {
           />
         </div>
 
-        {/* Email Display */}
+        
         <p className="text-center text-gray-700 mb-6">
           <strong>Email:</strong> {user?.email}
         </p>
 
-        {/* Input Fields */}
+       
         <div className="space-y-4">
           <input
             type="text"
@@ -78,7 +78,7 @@ const MyProfile = () => {
           </button>
         </div>
 
-        {/* Message */}
+       
         {msg && (
           <p className="text-center mt-4 font-medium">{msg}</p>
         )}
