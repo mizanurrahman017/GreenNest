@@ -6,6 +6,7 @@ import Details from "../component/Details/details";
 import Login from "../component/login/login";
 import register from "../component/Register/register";
 import myprofile from "../component/Myprofile/myprofile";
+import plants from "../component/Plant/plants";
 
 
 
@@ -33,6 +34,10 @@ export const router = createBrowserRouter([
       {
         path: "/profile",
         Component: myprofile,
+      },
+      {
+        path: "/plants",
+        Component: plants,
       }
     ]
   },

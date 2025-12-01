@@ -8,7 +8,7 @@
     "availableStock": 10,
     "careLevel": "Easy",
     "description": "A hardy plant that purifies indoor air and thrives in low light.",
-    "image": "/public/potted-snake-plants-inside-a-beautiful-new-flat-or-royalty-free-image-1727481322.avif",
+    "image": "/potted-snake-plants-inside-a-beautiful-new-flat-or-royalty-free-image-1727481322.avif",
     "providerName": "UrbanGreen Studio"
   },
   {
@@ -20,7 +20,7 @@
     "availableStock": 7,
     "careLevel": "Medium",
     "description": "A stylish indoor plant known for its iconic split leaves.",
-    "image": "/public/images.jpg",
+    "image": "/images.jpg",
     "providerName": "Leafy Paradise"
   },
   {
@@ -32,7 +32,7 @@
     "availableStock": 12,
     "careLevel": "Easy",
     "description": "Elegant white flowers that bloom indoors and clean the air.",
-    "image": "/public/Peace.png",
+    "image": "/Peace.png",
     "providerName": "GreenHome Nursery"
   },
   {
@@ -44,7 +44,7 @@
     "availableStock": 20,
     "careLevel": "Easy",
     "description": "A multifunctional succulent widely known for its healing gel.",
-    "image": "/public/Aloe.png",
+    "image": "/Aloe.png",
     "providerName": "EcoPlant Hub"
   },
   {
@@ -56,7 +56,7 @@
     "availableStock": 8,
     "careLevel": "Very Easy",
     "description": "A glossy-leaf plant that survives even in the darkest corners.",
-    "image": "/public/plants.png",
+    "image": "/plants.png",
     "providerName": "UrbanGreen Studio"
   },
   {
@@ -68,7 +68,79 @@
     "availableStock": 6,
     "careLevel": "Medium",
     "description": "A tropical indoor palm that adds a fresh natural vibe.",
-    "image": "/public/Areca.png",
+    "image": "/Areca.png",
     "providerName": "Leafy Paradise"
+  },
+  {
+    "plantId": 7,
+    "plantName": "Fern Plant",
+    "category": "Indoor",
+    "price": 14,
+    "rating": 3.9,
+    "availableStock": 9,
+    "careLevel": "Medium",
+    "description": "A soft leafy plant that prefers humidity and indirect light.",
+    "image": "/src/assets/fern plant .png",
+    "providerName": "EcoPlant Hub"
+  },
+  {
+    "plantId": 8,
+    "plantName": "Cactus Mini",
+    "category": "Succulent",
+    "price": 10,
+    "rating": 3.7,
+    "availableStock": 15,
+    "careLevel": "Very Easy",
+    "description": "A tiny cactus that requires minimal watering and sunlight.",
+    "image": "/src/assets/Cactus mini .png",
+    "providerName": "UrbanGreen Studio"
+  },
+  {
+    "plantId": 9,
+    "plantName": "Oxalis Purple",
+    "category": "Flowering",
+    "price": 20,
+    "rating": 3.6,
+    "availableStock": 5,
+    "careLevel": "Medium",
+    "description": "Unique purple-leafed plant that looks stunning indoors.",
+    "image": "/src/assets/Oxalis Purple .png",
+    "providerName": "Leafy Paradise"
+  },
+  {
+    "plantId": 10,
+    "plantName": "Lucky Bamboo",
+    "category": "Indoor",
+    "price": 12,
+    "rating": 3.8,
+    "availableStock": 18,
+    "careLevel": "Easy",
+    "description": "A symbol of good luck, thrives in water or soil.",
+    "image": "/src/assets/Lucky Bamboo.png",
+    "providerName": "GreenHome Nursery"
+  },
+  {
+    "plantId": 11,
+    "plantName": "Croton Petra",
+    "category": "Decorative",
+    "price": 22,
+    "rating": 3.5,
+    "availableStock": 7,
+    "careLevel": "Medium",
+    "description": "A bright colorful indoor plant with yellow-red patterned leaves.",
+    "image": "/src/assets/Croton Petra.png",
+    "providerName": "EcoPlant Hub"
+  },
+  {
+    "plantId": 12,
+    "plantName": "Jade Plant",
+    "category": "Succulent",
+    "price": 16,
+    "rating": 3.9,
+    "availableStock": 11,
+    "careLevel": "Easy",
+    "description": "A compact succulent considered a symbol of prosperity.",
+    "image": "/src/assets/Jade Plant.png",
+    "providerName": "UrbanGreen Studio"
   }
 ]

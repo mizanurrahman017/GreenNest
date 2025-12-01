@@ -4,6 +4,8 @@ import plantsData from "../../Data/Plants.json";
 import Experts from "../Experts/Experts";
 import { motion } from "framer-motion";
 import { auth } from "../../firebase/Firebase.init";
+import Sale from "../../component/Sale/sale";
+// import about from "../../component/About/about";
 
 export default function HomePage() {
   const [plants, setPlants] = useState([]);
@@ -110,6 +112,8 @@ export default function HomePage() {
       
       <section className="mb-20">
         <Experts />
+        <Sale></Sale>
+        {/* <About></About> */}
       </section>
     </div>
   );
