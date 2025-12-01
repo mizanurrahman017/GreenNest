@@ -16,7 +16,7 @@ const Sale = () => {
       
       <div>
         <img 
-          src="/src/assets/download.png" 
+          src="/download.png" 
           alt="Sale Banner" 
           className="h-[250px] object-contain"
         />
