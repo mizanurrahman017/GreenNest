@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useNavigate } from "react-router";
 import plantsData from "../../Data/Plants.json";
-import { auth } from "../../firebase/Firebase.init";  // <-- ADD THIS
+import { auth } from "../../firebase/Firebase.init"; 
 
 export default function Plants() {
   const navigate = useNavigate();
@@ -10,9 +10,9 @@ export default function Plants() {
     const user = auth.currentUser;
 
     if (!user) {
-      navigate("/login");   // Not logged in → go to Login
+      navigate("/login");   
     } else {
-      navigate(`/details/${id}`); // Logged in → go to Details
+      navigate(`/details/${id}`); 
     }
   };
 
@@ -23,14 +23,14 @@ export default function Plants() {
           key={p.plantId}
           className="border rounded-xl shadow-md overflow-hidden bg-white"
         >
-          {/* Plant Image */}
+          
           <img
             src={p.image}
             alt={p.plantName}
             className="w-full h-60 object-cover"
           />
 
-          {/* Plant Info */}
+          
           <div className="p-4">
             <h2 className="text-xl font-semibold">{p.plantName}</h2>
 
@@ -64,7 +64,7 @@ export default function Plants() {
               <span className="font-semibold">Stock:</span> {p.availableStock}
             </p>
 
-            {/* View Details Button */}
+            
             <button
               onClick={() => handleViewDetails(p.plantId)}
               className="mt-4 bg-green-600 hover:bg-green-700 text-white w-full py-2 rounded-lg"

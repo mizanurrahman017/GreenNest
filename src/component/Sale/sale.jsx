@@ -4,7 +4,7 @@ const Sale = () => {
   return (
     <div className="container mx-auto h-[250px] bg-gradient-to-b from-white to-[#d9e9e4] rounded-2xl flex items-center justify-between px-10">
 
-      {/* Left Text Side */}
+      
       <div>
         <h2 className="text-3xl font-bold text-gray-700">SALE OF 15%</h2>
 
@@ -13,7 +13,7 @@ const Sale = () => {
         </button>
       </div>
 
-      {/* Right Image Side */}
+      
       <div>
         <img 
           src="/src/assets/download.png" 
