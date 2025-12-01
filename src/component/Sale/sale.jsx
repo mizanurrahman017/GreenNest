@@ -2,7 +2,7 @@ import React from "react";
 
 const Sale = () => {
   return (
-    <div className="w-full h-[250px] bg-gradient-to-b from-white to-[#d9e9e4] rounded-2xl flex items-center justify-between px-10">
+    <div className="container mx-auto h-[250px] bg-gradient-to-b from-white to-[#d9e9e4] rounded-2xl flex items-center justify-between px-10">
 
       {/* Left Text Side */}
       <div>
